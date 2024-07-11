@@ -71,6 +71,11 @@
 }
 
 @media (max-width: 746px) {
+
+    .wrapper {
+        background-size: 100% 20%;
+    }
+
     .navbar__list {
         display: none;
     }

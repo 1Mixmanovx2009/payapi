@@ -1,0 +1,47 @@
+.Easy {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 150px;
+}
+
+.Easy__title {
+    padding-top: 110px;
+    font-family: "DM Serif Display", serif;
+    @include textStyle($FS:48px, $FW:400, $LH:56px, $CLR:#36536B, $MB:24px);
+}
+
+.Easy__text {
+    width: 389px;
+    font-family: "Public Sans", serif;
+    @include textStyle($FS:15px, $FW:400, $LH:28px, $CLR:#6C8294, $MB:0px);
+
+}
+
+
+
+@media (max-width: 1026px) {
+    .Easy {
+        padding-top: 70px;
+        flex-direction: column;
+    }
+
+    .Easy__title-wrapper {
+        text-align: center;
+    }
+
+    .Easy__title {
+        padding-top: 0px;
+        @include textStyle($FS:48px, $FW:400, $LH:56px, $CLR:#36536B, $MB:24px);
+    }
+
+    .Easy__text {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Easy__img-wrapper {
+        margin-left: 250px;
+        margin: auto;
+    }
+    
+}
